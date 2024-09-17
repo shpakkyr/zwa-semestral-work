@@ -1,0 +1,40 @@
+
+body{
+	background-image: url('bg_image/MFysuj.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.slogan{
+	margin-top: 200px;
+	color: #a81616;
+	font-size: 65px;
+	text-shadow: 2px 2px 5px black;
+	text-align: center;
+}
+
+.explore{
+	display: flex;
+	justify-content: center;
+}
+
+.explore a{
+	color: white;
+	font-size: 24px;
+	text-shadow: 2px 2px 10px black;
+	margin-top: 40px;
+	padding: 8px 15px;
+	background-color: #a81616;
+	border-radius: 25px;
+}
+
+@media print{
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	header, footer {
+		display: none;
+	}
+}

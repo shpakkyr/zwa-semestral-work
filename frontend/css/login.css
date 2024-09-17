@@ -1,0 +1,175 @@
+.container{
+	background-image: url('bg_image/tmp.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-login{
+	width: 300px;
+	height: auto;
+	background-color: rgba(23, 22, 20, 0.9);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container-signup{
+	width: 300px;
+	height: auto;
+	background-color: rgba(23, 22, 20, 0.9);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2{
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+form{
+	padding: 50px 35px;
+	color: white;
+}
+
+label{
+	font-weight: bold;
+}
+
+.forgot_password{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.forgot_password a{
+	color: #a81616;
+}
+
+.forgot_password a:visited{
+	color: #a81616;
+}
+
+input{
+	width: 100%;
+}
+
+form div{
+	margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email']{
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 1px solid white;
+	height: 30px;
+	font-size: 14px;
+	color: white;
+}
+
+button[type='submit']{
+	border: none;
+	outline: none;
+	height: 30px;
+	width: 230px;
+	border-radius: 20px;
+	background-color: transparent;
+	color: white;
+	border: 1px solid #a81616;
+	font-size: 16px;
+	transition: .3s;
+	margin-bottom: 20px;
+}
+
+button[type='submit']:hover{
+	cursor: pointer;
+	background-color: #a81616;
+}
+
+.second-password-class, .first-password-class, .password-class {
+	position: relative;
+}
+
+span img{
+	width: 20px;
+	height: 20px;
+}
+
+.pass-icon{
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+p{
+	text-align: center;
+}
+
+p a{
+	color: #a81616;
+}
+
+p a:visited{
+	color: #a81616;
+}
+
+form span:not(.pass-icon){
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	color: #e81515;
+}
+
+@media print{
+	.container{
+		margin-top: 50px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.container-login {
+		width: 100%;
+		max-width: none;
+	}
+
+	.container-signup {
+		width: 100%;
+		max-width: none;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	form {
+		padding: 20px;
+	}
+
+	input,
+	button {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.pass-icon, header, footer, span {
+		display: none;
+	}
+
+	.forgot_password,
+	p {
+		display: none;
+	}
+}

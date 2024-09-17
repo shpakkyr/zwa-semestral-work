@@ -1,0 +1,39 @@
+.about-section {
+    max-width: 800px;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.fishing-rules {
+    list-style-type: none;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.fishing-rules li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+@media print{
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header, footer {
+        display: none;
+    }
+}

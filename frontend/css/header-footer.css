@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links a{
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.header-links{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    background-color: black;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    color: white;
+    padding: 0 15px;
+}
+
+.dropdown-content li{
+    display: block;
+}
+
+.dropdown-content{
+    width: 140px;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    color: #cf0a0a;
+}
+
+ul li:hover .dropdown-content{
+    display: block;
+}
+
+.profile {
+    list-style: none;
+    margin-right: 90px;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-username {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    background-color: #a81616;
+    border: 1px solid #a81616;
+    border-radius: 25px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.dropdown-cont {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 140px;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-cont li {
+    padding: 6px 0;
+}
+
+/* Position the dropdown to the right of the username */
+.profile:hover .dropdown-cont {
+    display: block;
+    left: 0;
+    top: 100%;
+}
+
+.authentication a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.authentication a:first-child{
+    background-color: #a81616;
+    border: 1px solid #a81616;
+    border-radius: 25px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.authentication a:nth-child(2){
+    margin-right: 10px;
+}
+
+.authentication a:nth-child(2):hover{
+    background-color: grey;
+    border-radius: 25px;
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.footer .designed-by{
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+form span:not(.pass-icon){
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #e81515;
+}
+

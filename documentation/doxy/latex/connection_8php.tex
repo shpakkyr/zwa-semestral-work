@@ -1,0 +1,68 @@
+\doxysection{/\+Users/kirill/\+Desktop/\+Final\+\_\+result/app/database/connection.php File Reference}
+\hypertarget{connection_8php}{}\label{connection_8php}\index{/Users/kirill/Desktop/Final\_result/app/database/connection.php@{/Users/kirill/Desktop/Final\_result/app/database/connection.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{connection_8php_a711797613cb863ca0756df789c396bf2}{\$host}} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\mbox{\hyperlink{connection_8php_ac5111a571fffa2499732833bb7f0d8c1}{\$dbname}} = \textquotesingle{}shpakkyr\textquotesingle{}
+\item 
+\mbox{\hyperlink{connection_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}shpakkyr\textquotesingle{}
+\item 
+\mbox{\hyperlink{connection_8php_a12ec2780b52bd1c54d38c2f981c0349f}{\$pass}} = \textquotesingle{}webove aplikace\textquotesingle{}
+\item 
+\mbox{\hyperlink{connection_8php_a011800c63ece4cbbfa77136a20607023}{\$options}}
+\item 
+\mbox{\hyperlink{connection_8php_abe4cc9788f52e49485473dc699537388}{try}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{connection_8php_ac5111a571fffa2499732833bb7f0d8c1}\label{connection_8php_ac5111a571fffa2499732833bb7f0d8c1} 
+\index{connection.php@{connection.php}!\$dbname@{\$dbname}}
+\index{\$dbname@{\$dbname}!connection.php@{connection.php}}
+\doxysubsubsection{\texorpdfstring{\$dbname}{\$dbname}}
+{\footnotesize\ttfamily \$dbname = \textquotesingle{}shpakkyr\textquotesingle{}}
+
+\Hypertarget{connection_8php_a711797613cb863ca0756df789c396bf2}\label{connection_8php_a711797613cb863ca0756df789c396bf2} 
+\index{connection.php@{connection.php}!\$host@{\$host}}
+\index{\$host@{\$host}!connection.php@{connection.php}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \$host = \textquotesingle{}localhost\textquotesingle{}}
+
+\Hypertarget{connection_8php_a011800c63ece4cbbfa77136a20607023}\label{connection_8php_a011800c63ece4cbbfa77136a20607023} 
+\index{connection.php@{connection.php}!\$options@{\$options}}
+\index{\$options@{\$options}!connection.php@{connection.php}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \$options}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [PDO::ATTR\_ERRMODE\ =>\ PDO::ERRMODE\_EXCEPTION,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ PDO::ATTR\_DEFAULT\_FETCH\_MODE\ =>\ PDO::FETCH\_ASSOC]}
+
+\end{DoxyCode}
+Options for connecting to db\Hypertarget{connection_8php_a12ec2780b52bd1c54d38c2f981c0349f}\label{connection_8php_a12ec2780b52bd1c54d38c2f981c0349f} 
+\index{connection.php@{connection.php}!\$pass@{\$pass}}
+\index{\$pass@{\$pass}!connection.php@{connection.php}}
+\doxysubsubsection{\texorpdfstring{\$pass}{\$pass}}
+{\footnotesize\ttfamily \$pass = \textquotesingle{}webove aplikace\textquotesingle{}}
+
+\Hypertarget{connection_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{connection_8php_a598ca4e71b15a1313ec95f0df1027ca5} 
+\index{connection.php@{connection.php}!\$user@{\$user}}
+\index{\$user@{\$user}!connection.php@{connection.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{\$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}shpakkyr\textquotesingle{}}
+
+\Hypertarget{connection_8php_abe4cc9788f52e49485473dc699537388}\label{connection_8php_abe4cc9788f52e49485473dc699537388} 
+\index{connection.php@{connection.php}!try@{try}}
+\index{try@{try}!connection.php@{connection.php}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily try}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ajax_8php_a94f5dbc7446e0047f5384945f87dcdd0}{\$connection}}\ =\ \textcolor{keyword}{new}\ PDO(\textcolor{stringliteral}{"{}mysql:host=\$host;dbname=\$dbname"{}},\ \mbox{\hyperlink{connection_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}},\ \mbox{\hyperlink{connection_8php_a12ec2780b52bd1c54d38c2f981c0349f}{\$pass}},\ \mbox{\hyperlink{connection_8php_a011800c63ece4cbbfa77136a20607023}{\$options}})}
+
+\end{DoxyCode}

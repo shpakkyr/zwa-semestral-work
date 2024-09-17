@@ -1,0 +1,99 @@
+h2{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.container-create{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px;
+    font-size: 20px;
+}
+
+.container-block{
+    margin-top: 20px;
+}
+
+.container-input{
+    margin-top: 10px;
+}
+
+input{
+    width: 600px;
+    height: 30px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:hover {
+    border-color: #555;
+}
+
+textarea{
+    width: 600px;
+    height: 300px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.container-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-buttons button{
+    margin: 30px 50px;
+    padding: 10px 20px;
+}
+
+#create-button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#create-button:hover {
+    background-color: #45a049;
+}
+
+#cancel-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cancel-button:hover {
+    background-color: #d32f2f;
+}
+
+.container-empty{
+    margin-top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.container-empty h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media print{
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header, footer, span {
+        display: none;
+    }
+}

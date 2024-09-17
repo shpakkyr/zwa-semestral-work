@@ -1,0 +1,200 @@
+\doxysection{/\+Users/kirill/\+Desktop/\+Final\+\_\+result/app/database/db.php File Reference}
+\hypertarget{db_8php}{}\label{db_8php}\index{/Users/kirill/Desktop/Final\_result/app/database/db.php@{/Users/kirill/Desktop/Final\_result/app/database/db.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{db_8php_a508598c0a8c5bb0d20fe00c467997ceb}{tt}} (\$value)
+\item 
+\mbox{\hyperlink{db_8php_afe609c2d9f8e22584ff4a5d1ce871944}{db\+Error\+Check}} (\$query)
+\item 
+\mbox{\hyperlink{db_8php_a0b69f36760e63d2a6c8533c2598ed824}{select\+One}} (\$table, \$param)
+\item 
+\mbox{\hyperlink{db_8php_a043428278dfb1869faf814bdeac72904}{select\+All}} (\$table)
+\item 
+\mbox{\hyperlink{db_8php_a178a6db106735430234cc7843efc00e0}{select\+All\+Where}} (\$table, \$param, \$count=0)
+\item 
+\mbox{\hyperlink{db_8php_a0796481bfcd078acae4522df3ff57038}{select\+All\+Limit\+Offset}} (\$table, \$limit, \$offset, \$order\+By, \$order, \$category=\textquotesingle{}\textquotesingle{}, \$id\+\_\+user=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{db_8php_af0f55c34cede5398d84a198ab2a1210d}{insert}} (\$table, \$params)
+\item 
+\mbox{\hyperlink{db_8php_ab16c1a8a9faca45a4ed07fc6807a6a73}{update}} (\$table, \$params, \$id, \$id\+\_\+db)
+\item 
+\mbox{\hyperlink{db_8php_ae977cca5500db8ead2fffdfabd7dd1ac}{delete}} (\$table, \$id, \$id\+Attribute)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{db_8php_afe609c2d9f8e22584ff4a5d1ce871944}\label{db_8php_afe609c2d9f8e22584ff4a5d1ce871944} 
+\index{db.php@{db.php}!dbErrorCheck@{dbErrorCheck}}
+\index{dbErrorCheck@{dbErrorCheck}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{dbErrorCheck()}{dbErrorCheck()}}
+{\footnotesize\ttfamily db\+Error\+Check (\begin{DoxyParamCaption}\item[{}]{\$query }\end{DoxyParamCaption})}
+
+Function to check for errors after executing a database query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+PDOStatement & {\em \$query} & The executed PDOStatement.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true if there are no errors, otherwise exits the script. 
+\end{DoxyReturn}
+\Hypertarget{db_8php_ae977cca5500db8ead2fffdfabd7dd1ac}\label{db_8php_ae977cca5500db8ead2fffdfabd7dd1ac} 
+\index{db.php@{db.php}!delete@{delete}}
+\index{delete@{delete}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily delete (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$id,  }\item[{}]{\$id\+Attribute }\end{DoxyParamCaption})}
+
+Function to delete records from the specified table based on the provided parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & The name of the table to delete from. \\
+\hline
+int & {\em \$id} & The value of the primary key for the WHERE clause. \\
+\hline
+string & {\em \$id\+Attribute} & The name of the primary key column.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the number of affected rows. 
+\end{DoxyReturn}
+\Hypertarget{db_8php_af0f55c34cede5398d84a198ab2a1210d}\label{db_8php_af0f55c34cede5398d84a198ab2a1210d} 
+\index{db.php@{db.php}!insert@{insert}}
+\index{insert@{insert}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily insert (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$params }\end{DoxyParamCaption})}
+
+Function to insert a new record into the specified table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & The name of the table to insert into. \\
+\hline
+array & {\em \$params} & An associative array of column names and values to be inserted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the last inserted ID. 
+\end{DoxyReturn}
+\Hypertarget{db_8php_a043428278dfb1869faf814bdeac72904}\label{db_8php_a043428278dfb1869faf814bdeac72904} 
+\index{db.php@{db.php}!selectAll@{selectAll}}
+\index{selectAll@{selectAll}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{selectAll()}{selectAll()}}
+{\footnotesize\ttfamily select\+All (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})}
+
+Function to select all records from a table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & The name of the table to select from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Returns an array containing all records from the specified table. 
+\end{DoxyReturn}
+\Hypertarget{db_8php_a0796481bfcd078acae4522df3ff57038}\label{db_8php_a0796481bfcd078acae4522df3ff57038} 
+\index{db.php@{db.php}!selectAllLimitOffset@{selectAllLimitOffset}}
+\index{selectAllLimitOffset@{selectAllLimitOffset}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{selectAllLimitOffset()}{selectAllLimitOffset()}}
+{\footnotesize\ttfamily select\+All\+Limit\+Offset (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$limit,  }\item[{}]{\$offset,  }\item[{}]{\$order\+By,  }\item[{}]{\$order,  }\item[{}]{\$category = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$id\+\_\+user = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Function for pagination -\/ selects a limited number of records from a table with optional filtering.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & The name of the table to select from. \\
+\hline
+int & {\em \$limit} & The number of records to retrieve. \\
+\hline
+int & {\em \$offset} & The starting offset for retrieving records. \\
+\hline
+string & {\em \$order\+By} & The column to order by. \\
+\hline
+string & {\em \$order} & The order direction (\textquotesingle{}ASC\textquotesingle{} or \textquotesingle{}DESC\textquotesingle{}). \\
+\hline
+string & {\em \$category} & Optional category filter. \\
+\hline
+string & {\em \$id\+\_\+user} & Optional user ID filter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Returns an array containing the selected records. 
+\end{DoxyReturn}
+\Hypertarget{db_8php_a178a6db106735430234cc7843efc00e0}\label{db_8php_a178a6db106735430234cc7843efc00e0} 
+\index{db.php@{db.php}!selectAllWhere@{selectAllWhere}}
+\index{selectAllWhere@{selectAllWhere}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{selectAllWhere()}{selectAllWhere()}}
+{\footnotesize\ttfamily select\+All\+Where (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$param,  }\item[{}]{\$count = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Function to select all records or count the rows in a table based on provided parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & The name of the table to select from. \\
+\hline
+array & {\em \$param} & An associative array of parameters for the WHERE clause. \\
+\hline
+int & {\em \$count} & If set to 1, the function returns the count of rows instead of the records.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}int Returns an array containing all records from the specified table or the count of rows. 
+\end{DoxyReturn}
+\Hypertarget{db_8php_a0b69f36760e63d2a6c8533c2598ed824}\label{db_8php_a0b69f36760e63d2a6c8533c2598ed824} 
+\index{db.php@{db.php}!selectOne@{selectOne}}
+\index{selectOne@{selectOne}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{selectOne()}{selectOne()}}
+{\footnotesize\ttfamily select\+One (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$param }\end{DoxyParamCaption})}
+
+Function selects one from table with parameters
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & The name of the table to select from. \\
+\hline
+array & {\em \$param} & An associative array of parameters for the WHERE clause.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed\texorpdfstring{$\vert$}{|}null Returns the selected record as an associative array or null if not found. 
+\end{DoxyReturn}
+\Hypertarget{db_8php_a508598c0a8c5bb0d20fe00c467997ceb}\label{db_8php_a508598c0a8c5bb0d20fe00c467997ceb} 
+\index{db.php@{db.php}!tt@{tt}}
+\index{tt@{tt}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{tt()}{tt()}}
+{\footnotesize\ttfamily tt (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Function for more comfortable printing of data using pre tags.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & The value to be printed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{db_8php_ab16c1a8a9faca45a4ed07fc6807a6a73}\label{db_8php_ab16c1a8a9faca45a4ed07fc6807a6a73} 
+\index{db.php@{db.php}!update@{update}}
+\index{update@{update}!db.php@{db.php}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily update (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$params,  }\item[{}]{\$id,  }\item[{}]{\$id\+\_\+db }\end{DoxyParamCaption})}
+
+Function to update records in the specified table based on the provided parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & The name of the table to update. \\
+\hline
+array & {\em \$params} & An associative array of column names and values to be updated. \\
+\hline
+int & {\em \$id} & The value of the primary key for the WHERE clause. \\
+\hline
+string & {\em \$id\+\_\+db} & The name of the primary key column.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the number of affected rows. 
+\end{DoxyReturn}

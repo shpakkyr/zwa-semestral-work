@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['_28_20_24offset_20_3e_3d0_20_26_26count_28_20_24posts_29_20_3e_200_29_0',['( $offset &gt;=0 &amp;&amp;count( $posts) &gt; 0)',['../courses-list_8php.html#a25f9b9a9f991266ffee9afe7befc1e2d',1,'( $offset &gt;=0 &amp;&amp;count( $posts) &gt; 0):&#160;courses-list.php'],['../index-posts_8php.html#a25f9b9a9f991266ffee9afe7befc1e2d',1,'( $offset &gt;=0 &amp;&amp;count( $posts) &gt; 0):&#160;index-posts.php'],['../my-courses_8php.html#a25f9b9a9f991266ffee9afe7befc1e2d',1,'( $offset &gt;=0 &amp;&amp;count( $posts) &gt; 0):&#160;my-courses.php']]],
+  ['_28_20_24offset_20_3e_3d0_20_26_26count_28_20_24users_29_20_3e_200_29_1',['( $offset &gt;=0 &amp;&amp;count( $users) &gt; 0)',['../index-users_8php.html#afc3e5d33b936d4e0d2875454c7e9b145',1,'index-users.php']]],
+  ['_28_28_28isset_28_20_24_5fsession_5b_20_27admin_27_5d_29_20_26_26_24path_3d_3d_3d1_29_7c_7c_28isset_28_20_24_5fsession_5b_20_27admin_27_5d_29_20_26_26_24_5fsession_5b_20_27admin_27_5d_3d_3d_3d1_29_29_20_26_26_24exist_3d_3d_3d1_29_2',['(((isset( $_SESSION[ &apos;admin&apos;]) &amp;&amp;$path===1)||(isset( $_SESSION[ &apos;admin&apos;]) &amp;&amp;$_SESSION[ &apos;admin&apos;]===1)) &amp;&amp;$exist===1)',['../edit-posts_8php.html#abb376457e49acf006354502bd979851f',1,'edit-posts.php']]],
+  ['_28isset_28_20_24_5fsession_5b_20_27admin_27_5d_29_29_3',['(isset( $_SESSION[ &apos;admin&apos;]))',['../create-course_8php.html#aba1f5fb050578a0209333099bb120037',1,'create-course.php']]]
+];

@@ -1,0 +1,118 @@
+\doxysection{/\+Users/kirill/\+Desktop/\+Final\+\_\+result/courses-\/list.php File Reference}
+\hypertarget{courses-list_8php}{}\label{courses-list_8php}\index{/Users/kirill/Desktop/Final\_result/courses-\/list.php@{/Users/kirill/Desktop/Final\_result/courses-\/list.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{courses-list_8php_a18b2a8d133fa7733bf34abcc6ca2ef5b}{\$category}} = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{change-password_8php_a8bdf158df3ffc97732c0777fd10158de}{if}}(\$category) \mbox{\hyperlink{courses-list_8php_af59fe4026c37b2a52574b63f639afbb3}{else}}
+\item 
+\mbox{\hyperlink{courses-list_8php_a0a44e6760141442bb439b1ab1395d8ff}{\$page}} = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}page\textquotesingle{}\mbox{]}) \&\& \$\+\_\+\+GET\mbox{[}\textquotesingle{}page\textquotesingle{}\mbox{]} !== \textquotesingle{}\textquotesingle{} \&\& is\+\_\+numeric(\$\+\_\+\+GET\mbox{[}\textquotesingle{}page\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}page\textquotesingle{}\mbox{]} \+: 1
+\item 
+\mbox{\hyperlink{courses-list_8php_aeac52724d4edab556efa0d2cf6aec342}{\$per\+Page}} = 2
+\item 
+\mbox{\hyperlink{courses-list_8php_a09df9f292a71538bd4dfd66675cca992}{\$total\+Courses}} = count(\$posts)
+\item 
+\mbox{\hyperlink{courses-list_8php_a9d270d95ca53a5ae61ad917752416d12}{\$total\+Pages}} = ceil(\$total\+Courses / \$per\+Page)
+\item 
+\mbox{\hyperlink{courses-list_8php_aec4de82415d7f05cb9748d12d3a95a87}{\$offset}} = \$per\+Page \texorpdfstring{$\ast$}{*} (\$page -\/1)
+\item 
+\mbox{\hyperlink{courses-list_8php_a560c9fba454cb68f2a14151c5ac7fb68}{if}} ( \$offset $>$=0)
+\item 
+\mbox{\hyperlink{courses-list_8php_a672d9707ef91db026c210f98cc601123}{endforeach}}
+\item 
+\mbox{\hyperlink{courses-list_8php_a82cd33ca97ff99f2fcc5e9c81d65251b}{endif}}
+\item 
+\mbox{\hyperlink{change-password_8php_a8bdf158df3ffc97732c0777fd10158de}{if}} \mbox{\hyperlink{courses-list_8php_a25f9b9a9f991266ffee9afe7befc1e2d}{( \$offset $>$=0 \&\&count( \$posts) $>$ 0)}} ( \$i=1;\$i$<$=\$total\+Pages;\$i++) = \$i
+\item 
+\mbox{\hyperlink{courses-list_8php_ae8fdc27183f296411bac00ed522ee1ac}{endfor}}
+\item 
+\mbox{\hyperlink{header_8php_aad281e02773c5537b02cc270a086f86e}{else}} \mbox{\hyperlink{courses-list_8php_a8e01dcc96c43199448ee66f7c2ae8ea6}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{courses-list_8php_a18b2a8d133fa7733bf34abcc6ca2ef5b}\label{courses-list_8php_a18b2a8d133fa7733bf34abcc6ca2ef5b} 
+\index{courses-\/list.php@{courses-\/list.php}!\$category@{\$category}}
+\index{\$category@{\$category}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{\$category}{\$category}}
+{\footnotesize\ttfamily \$category = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}category\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{courses-list_8php_aec4de82415d7f05cb9748d12d3a95a87}\label{courses-list_8php_aec4de82415d7f05cb9748d12d3a95a87} 
+\index{courses-\/list.php@{courses-\/list.php}!\$offset@{\$offset}}
+\index{\$offset@{\$offset}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{\$offset}{\$offset}}
+{\footnotesize\ttfamily \$offset = \$per\+Page \texorpdfstring{$\ast$}{*} (\$page -\/1)}
+
+\Hypertarget{courses-list_8php_a0a44e6760141442bb439b1ab1395d8ff}\label{courses-list_8php_a0a44e6760141442bb439b1ab1395d8ff} 
+\index{courses-\/list.php@{courses-\/list.php}!\$page@{\$page}}
+\index{\$page@{\$page}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{\$page}{\$page}}
+{\footnotesize\ttfamily \$page = isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}page\textquotesingle{}\mbox{]}) \&\& \$\+\_\+\+GET\mbox{[}\textquotesingle{}page\textquotesingle{}\mbox{]} !== \textquotesingle{}\textquotesingle{} \&\& is\+\_\+numeric(\$\+\_\+\+GET\mbox{[}\textquotesingle{}page\textquotesingle{}\mbox{]}) ? \$\+\_\+\+GET\mbox{[}\textquotesingle{}page\textquotesingle{}\mbox{]} \+: 1}
+
+\Hypertarget{courses-list_8php_aeac52724d4edab556efa0d2cf6aec342}\label{courses-list_8php_aeac52724d4edab556efa0d2cf6aec342} 
+\index{courses-\/list.php@{courses-\/list.php}!\$perPage@{\$perPage}}
+\index{\$perPage@{\$perPage}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{\$perPage}{\$perPage}}
+{\footnotesize\ttfamily \$per\+Page = 2}
+
+\Hypertarget{courses-list_8php_a09df9f292a71538bd4dfd66675cca992}\label{courses-list_8php_a09df9f292a71538bd4dfd66675cca992} 
+\index{courses-\/list.php@{courses-\/list.php}!\$totalCourses@{\$totalCourses}}
+\index{\$totalCourses@{\$totalCourses}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{\$totalCourses}{\$totalCourses}}
+{\footnotesize\ttfamily \$total\+Courses = count(\$posts)}
+
+\Hypertarget{courses-list_8php_a9d270d95ca53a5ae61ad917752416d12}\label{courses-list_8php_a9d270d95ca53a5ae61ad917752416d12} 
+\index{courses-\/list.php@{courses-\/list.php}!\$totalPages@{\$totalPages}}
+\index{\$totalPages@{\$totalPages}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{\$totalPages}{\$totalPages}}
+{\footnotesize\ttfamily \$total\+Pages = ceil(\$total\+Courses / \$per\+Page)}
+
+\Hypertarget{courses-list_8php_a25f9b9a9f991266ffee9afe7befc1e2d}\label{courses-list_8php_a25f9b9a9f991266ffee9afe7befc1e2d} 
+\index{courses-\/list.php@{courses-\/list.php}!( \$offset $>$=0 \&\&count( \$posts) $>$ 0)@{( \$offset $>$=0 \&\&count( \$posts) $>$ 0)}}
+\index{( \$offset $>$=0 \&\&count( \$posts) $>$ 0)@{( \$offset $>$=0 \&\&count( \$posts) $>$ 0)}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{( \$offset $>$=0 \&\&count( \$posts) $>$ 0)}{( \$offset >=0 \&\&count( \$posts) > 0)}}
+{\footnotesize\ttfamily \mbox{\hyperlink{change-password_8php_a8bdf158df3ffc97732c0777fd10158de}{if}} (\$offset $>$=0 \&\&count(\$posts) $>$ 0)(\$i=1; \$i$<$=\$total\+Pages; \$i++) (\begin{DoxyParamCaption}\item[{}]{\$offset $>$=0 \&\& \$posts,  }\item[{0}]{ }\end{DoxyParamCaption}) = \$i}
+
+\Hypertarget{courses-list_8php_a8e01dcc96c43199448ee66f7c2ae8ea6}\label{courses-list_8php_a8e01dcc96c43199448ee66f7c2ae8ea6} 
+\index{courses-\/list.php@{courses-\/list.php}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{header_8php_aad281e02773c5537b02cc270a086f86e}{else}} \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+\Hypertarget{courses-list_8php_af59fe4026c37b2a52574b63f639afbb3}\label{courses-list_8php_af59fe4026c37b2a52574b63f639afbb3} 
+\index{courses-\/list.php@{courses-\/list.php}!else@{else}}
+\index{else@{else}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{change-password_8php_a8bdf158df3ffc97732c0777fd10158de}{if}} ( \$category) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{index-posts_8php_a9f4cad5a721e7f7711fba0bf0f7ec273}{\$posts}}\ =\ \mbox{\hyperlink{db_8php_a043428278dfb1869faf814bdeac72904}{selectAll}}(\textcolor{stringliteral}{'posts'})}
+
+\end{DoxyCode}
+\Hypertarget{courses-list_8php_ae8fdc27183f296411bac00ed522ee1ac}\label{courses-list_8php_ae8fdc27183f296411bac00ed522ee1ac} 
+\index{courses-\/list.php@{courses-\/list.php}!endfor@{endfor}}
+\index{endfor@{endfor}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{endfor}{endfor}}
+{\footnotesize\ttfamily endfor}
+
+\Hypertarget{courses-list_8php_a672d9707ef91db026c210f98cc601123}\label{courses-list_8php_a672d9707ef91db026c210f98cc601123} 
+\index{courses-\/list.php@{courses-\/list.php}!endforeach@{endforeach}}
+\index{endforeach@{endforeach}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{endforeach}{endforeach}}
+{\footnotesize\ttfamily endforeach}
+
+\Hypertarget{courses-list_8php_a82cd33ca97ff99f2fcc5e9c81d65251b}\label{courses-list_8php_a82cd33ca97ff99f2fcc5e9c81d65251b} 
+\index{courses-\/list.php@{courses-\/list.php}!endif@{endif}}
+\index{endif@{endif}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{endif}{endif}}
+{\footnotesize\ttfamily endif}
+
+\Hypertarget{courses-list_8php_a560c9fba454cb68f2a14151c5ac7fb68}\label{courses-list_8php_a560c9fba454cb68f2a14151c5ac7fb68} 
+\index{courses-\/list.php@{courses-\/list.php}!if@{if}}
+\index{if@{if}!courses-\/list.php@{courses-\/list.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(\$offset $>$=0) (\begin{DoxyParamCaption}\item[{}]{\$offset $>$= }\end{DoxyParamCaption})}
+
